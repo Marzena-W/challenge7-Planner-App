@@ -28,11 +28,12 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  display: inline;
 }
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 60px;
   border-top: 1px solid white;
 }
 
@@ -40,6 +41,7 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  width: 25px;
 }
 
 .past {
@@ -61,11 +63,15 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #06aed5 !important;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+button i .myicon {
+  color: #06aed5 !important;
 }
