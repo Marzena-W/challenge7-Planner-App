@@ -25,6 +25,11 @@ textarea {
   white-space: pre-wrap;
 }
 
+#currentDay {
+  font-weight: bold;
+  margin-top: 50px;
+}
+
 .time-block {
   text-align: center;
   border-radius: 15px;
@@ -33,7 +38,7 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 60px;
+  height: 80px;
   border-top: 1px solid white;
 }
 
@@ -63,8 +68,19 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5 !important;
+  background-color: #010101 !important;
   color: white;
+  border: none;
+}
+
+.saveBtn:focus {
+  outline: none;
+  border: none;
+}
+
+.saveBtn:hover {
+  background-color: rgb(249, 185, 37) !important;
+  border: none;
 }
 
 .saveBtn i:hover {
@@ -72,6 +88,22 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-button i .myicon {
-  color: #06aed5 !important;
+i {
+  font-size: 25px;
 }
+
+#footer{
+  width: auto;
+  height: 50px;
+  background-color: rgb(240, 239, 239);
+  color: var(--light-text-col);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#contact-info{
+  display: flex;
+  justify-content: flex-end;
+} 
