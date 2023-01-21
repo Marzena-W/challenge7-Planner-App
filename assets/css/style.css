@@ -33,7 +33,6 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
-  display: inline;
 }
 
 .row {
@@ -46,7 +45,6 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
-  width: 25px;
 }
 
 .past {
@@ -97,4 +95,11 @@ i {
   height: 50px;
   background-color: rgb(240, 239, 239);
   margin-top: 30px;
+  text-align: center;
+}
+
+#footer p{
+  padding-top: 23px;
+  font-size: 12px;
+  font-weight: 600;
 }

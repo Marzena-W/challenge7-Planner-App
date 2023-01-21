@@ -1,25 +1,26 @@
 // Display the current day
 var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do"));
-
 // Display the current day
 var currentTime = moment();
 $("#currentTime").text(currentTime.format('LT'));
 
-
-// Color-code each timeblock based on past, present, and future when the timeblock is viewed.
-var color = document.getElementsByClassName("hour");
-var date = new Date();
-var currentHour = date.getHours();
+// to dyslay current hour
+var currentHour = moment().format('ha');
 console.log(currentHour);
+// Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
 
 
+btn9.addEventListener("click", function (event) {
+    event.preventDefault();
+    var savedMemo9 = document.querySelector("#userMemo9").value;
+    localStorage.setItem("savedMemo9", savedMemo9);
+    console.log("savedMemo9", savedMemo9);
+});
 
-
-
-// Save the event in local storage when the save button is clicked in that timeblock.
-
-
-
-// Persist events between refreshes of a page
+var userMemo9 = document.querySelector("#userMemo9");
+function showMemos() {
+    var savedMemo9 = localStorage.getItem("savedMemo9", savedMemo9);
+    userMemo9.textContent(savedMemo9);
+}
