@@ -11,15 +11,18 @@ console.log(currentHour);
 
 
 
-btn9.addEventListener("click", function (event) {
-    event.preventDefault();
-    var savedMemo9 = document.querySelector("#userMemo9").value;
-    localStorage.setItem("savedMemo9", savedMemo9);
-    console.log("savedMemo9", savedMemo9);
-});
-
-var userMemo9 = document.querySelector("#userMemo9");
-function showMemos() {
-    var savedMemo9 = localStorage.getItem("savedMemo9", savedMemo9);
-    userMemo9.textContent(savedMemo9);
+// Color-code each timeblock based on past, present, and future when the timeblock is viewed.
+function checkTime() {
+    for (var i = 9; i < 18; i++) { // workday starts at 9 and finishes at 17
+        var textArea = document.getElementById("userMemo" + i) // to select textarea by id + i
+        if (currentHour == i) {
+            textArea.classList.add("present");
+        } else if (currentHour > i) {
+            textArea.classList.add("past");
+        } else {
+            currentHour > i
+            textArea.classList.add("future");
+        }
+    }
 }
+checkTime();
