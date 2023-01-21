@@ -6,9 +6,8 @@ var currentTime = moment();
 $("#currentTime").text(currentTime.format('LT'));
 
 // to dyslay current hour
-var currentHour = moment().format('ha');
+var currentHour = moment().hour();
 console.log(currentHour);
-// Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
 
 
