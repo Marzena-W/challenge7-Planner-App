@@ -1,7 +1,7 @@
 # challenge7-Planner-App
 
 # Description 
-> In challenge 7 I created a create a calendar application that allows a user to save events for each working hour of the day (between 9am-5pm). 
+> In challenge 7 I created a calendar application that allows a user to save events for each working hour of the day (between 9am-5pm). 
 
 
 ## Usage 
