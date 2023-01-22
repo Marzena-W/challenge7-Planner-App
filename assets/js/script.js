@@ -14,14 +14,14 @@ console.log(currentHour);
 // Color-code each timeblock based on past, present, and future
 function checkTime() {
     for (var i = 9; i < 18; i++) { // workday starts at 9 and finishes at 17
-        var textArea = document.getElementById("userMemo" + i) // to select textarea by id + i
+        var textArea = $('#userMemo' + i) // to select textarea by id + i
         if (currentHour == i) {
-            textArea.classList.add("present");
+            textArea.addClass('present');
         } else if (currentHour > i) {
-            textArea.classList.add("past");
+            textArea.addClass("past");
         } else {
             currentHour > i
-            textArea.classList.add("future");
+            textArea.addClass("future");
         } 
     }
 }
