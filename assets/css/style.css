@@ -19,6 +19,17 @@ textarea {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  padding-bottom: 20px;
+}
+
+#confirmMemo {
+  font-weight:600;
+  text-transform: uppercase;
+  color: #0fd40f;
+  text-align: center;
+  padding-top: 10px;
+  height: 35px;
+  margin-bottom: -20px;
 }
 
 .description {
