@@ -6,7 +6,7 @@
 
 ## Usage 
 To access the solution open the below link to deployed application.
-* Deployed application - [https://marzena-w.github.io/challenge7-Planner-App/]
+* Deployed application - [https://marzena-w.github.io/planner-app/]
 * add memo in a text area
 * Save button on the right
 * Screenshot of the challenge7:
