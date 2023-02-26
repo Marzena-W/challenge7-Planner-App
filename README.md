@@ -9,7 +9,7 @@ To access the solution open the below link to deployed application.
 * Deployed application - [https://marzena-w.github.io/planner-app/]
 * add memo in a text area
 * Save button on the right
-* Screenshot of the challenge7:
+* Screenshot:
 ![Screenshot](./images/challenge7-planner.png)
 
 
